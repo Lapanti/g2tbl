@@ -1,5 +1,4 @@
 # g2tbl
----
 Gmail to Trello backlog. Takes incoming e-mails and saves them as cards on Trello
 
 * [Requirements](#requirements)
@@ -7,7 +6,6 @@ Gmail to Trello backlog. Takes incoming e-mails and saves them as cards on Trell
 * [Usage](#usage)
 
 ## <a name="requirements">Requirements</a>
----
 Before starting to use **g2tbl** you need to have done the following steps:
 * Install [Node](#https://nodejs.org/en/)
 * Have [Trello](#https://trello.com/) user
@@ -21,15 +19,12 @@ Before starting to use **g2tbl** you need to have done the following steps:
 * Add `serviceAccount:gmail-api-push@system.gserviceaccount.com` as a Pub/sub-publisher to the topic
 
 ## <a name="setup">Setup</a>
----
 1. [Copy the repo](#https://help.github.com/articles/duplicating-a-repository/)
 2. Copy the `config-example.js` and rename the copy to `config.js` (run the following script in the folder) `cp config-example.js config.js`
 3. Fill in the config.js as per the instructions in the file (previous [requirements](#requirements))
 
 ## <a name="usage">Usage</a>
----
 After setup is complete, just enter `node index.js` into a console in the home dir of the project.
 
 ### Sponsored by
----
 [Spice Program](#http://spiceprogram.org/)
