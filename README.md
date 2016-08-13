@@ -4,6 +4,7 @@ Gmail to Trello backlog. Takes incoming e-mails and saves them as cards on Trell
 * [Requirements](#requirements)
 * [Setup](#setup)
 * [Usage](#usage)
+* [Sponsored by](#sponsored)
 
 ## <a name="requirements">Requirements</a>
 Before starting to use **g2tbl** you need to have done the following steps:
@@ -26,5 +27,5 @@ Before starting to use **g2tbl** you need to have done the following steps:
 ## <a name="usage">Usage</a>
 After setup is complete, just enter `node index.js` into a console in the home dir of the project.
 
-### Sponsored by
+## <a name="sponsored">Sponsored by</a>
 [Spice Program](#http://spiceprogram.org/)
