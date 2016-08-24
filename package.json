@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/Lapanti/g2tbl#readme",
   "dependencies": {
-    "google-auth-library": "^0.9.8",
-    "googleapis": "^12.2.0",
+    "imap": "^0.8.17",
+    "mail-listener2": "^0.1.8",
+    "mailparser": "^0.6.1",
     "node-trello": "^1.1.2"
   },
   "devDependencies": {
