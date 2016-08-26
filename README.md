@@ -1,4 +1,5 @@
 # g2tbl
+[![Dependency Status](https://dependencyci.com/github/Lapanti/g2tbl/badge)](https://dependencyci.com/github/Lapanti/g2tbl)
 Gmail to Trello backlog. Takes incoming e-mails and saves them as cards on Trello
 
 * [Requirements](#requirements)
@@ -16,10 +17,8 @@ Before starting to use **g2tbl** you need to have done the following steps:
     * Get the id of the list as per this [guide](https://developers.trello.com/get-started/start-building#create)
 * [Gmail](https://mail.google.com/)
     * Have a Google account
-    * Create a project on [Google Developer Console](https://console.developers.google.com)
-    * Get auth credentials for your google account from [here](https://console.developers.google.com/apis/credentials)
-    * Create a topic for your project [here](https://console.cloud.google.com/cloudpubsub/topicList)
-    * Add `serviceAccount:gmail-api-push@system.gserviceaccount.com` as a Pub/sub-publisher to the topic
+    * Enable 2-factor authentication on your google account if not already done
+    * Create an app password [here](https://support.google.com/accounts/answer/185833?hl=en)
 
 ## <a name="setup">Setup</a>
 1. [Copy the repo](https://help.github.com/articles/duplicating-a-repository/)
