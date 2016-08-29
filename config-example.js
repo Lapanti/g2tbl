@@ -1,5 +1,8 @@
 /*eslint no-undef: 'off'*/
 const config = {
+  // Enablde development mode, only creates cards and replies to emails sent from
+  // the email set as email_user
+  DEVELOP: false,
   // Get your developer key and token for Trello API from https://trello.com/app-key
   trello_key: 'Your trello key comes here',
   trello_token: 'Your trello token comes here',
