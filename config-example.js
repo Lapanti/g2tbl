@@ -1,3 +1,4 @@
+/*eslint no-undef: 'off'*/
 const config = {
   // Get your developer key and token for Trello API from https://trello.com/app-key
   trello_key: 'Your trello key comes here',
@@ -16,6 +17,6 @@ const config = {
   email_mark_seen: true,
   // reply_email is the text you want to send as a response to a new thread
   reply_email: 'Hi, this is an automated message from g2tbl, your e-mail has been added to Trello'
-};
+}
 
-module.exports = config;
+module.exports = config

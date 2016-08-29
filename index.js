@@ -24,8 +24,16 @@ function createCard(name, desc, callback) {
   })
 }
 
+function hasCard(email) {
+  console.log(`Received email with ${util.inspect(email.to, false, null)}`)
+  const toAddresses = (email.to || []).map((object) => object == null ? '' : object.address)
+  const ccAddresses = (email.cc || []).map((object) => object == null ? '' : object.address)
+  const bccAddresses = (email.bcc || []).map((object) => object == null ? '' : object.address)
+  console.log(`Received addresses ${util.inspect(toAddresses, false, null)} and ${util.inspect(ccAddresses, false, null)} and ${util.inspect(bccAddresses, false, null)}`)
+}
+
 mailListener.start()
 console.log('Starting listening\nPress CTRL + C to quit')
 mailListener.on('server:connected', () => console.log('IMAP connected'))
 mailListener.on('error', (err) => console.log(`Encountered an error ${err}`))
-mailListener.on('mail', (mail, seqno, attributes) => console.log(`Mail parsed: ${util.inspect(mail, false, null)} with ${util.inspect(attributes, false, null)}`))
+mailListener.on('mail', (mail) => { hasCard(mail) })
