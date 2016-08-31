@@ -19,7 +19,9 @@ const config = {
   email_mailbox: 'INBOX',
   email_mark_seen: true,
   // reply_email is the text you want to send as a response to a new thread
-  reply_email: 'Hi, this is an automated message from g2tbl, your e-mail has been added to Trello'
+  reply_email: 'Hi,\n\nthis is an automated message from g2tbl, your e-mail has been added to Trello.\nPlease include the following email in the reply list from now on:',
+  // You can add an optional signature to the end of automated messages
+  reply_email_signature: ''
 }
 
 module.exports = config
